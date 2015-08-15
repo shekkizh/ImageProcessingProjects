@@ -32,11 +32,28 @@ def fullRangeLinearScaling(image):
     max_value = np.max(image)
     return ((255 / max_value) * image).astype(np.uint8)
 
+def sliderCallBack(thresh):
+    image = np.copy(grayImage)
+    truthImage = image < thresh
+    image[truthImage] = 0
+    image[~truthImage] =255
+    # image[not truthImage] = 255
+    cv.imshow('Thresholding', image)
+
+
+def thresholdGrayImage():
+    cv.namedWindow('Thresholding', cv.WINDOW_AUTOSIZE)
+    cv.createTrackbar('Threshold', 'Thresholding',128, 255, sliderCallBack)
+    cv.waitKey(0)
+
+
+
 
 inputImage = imageRead('desk.raw')
-showImage('Input', inputImage)
 
 grayImage = convertToGray(inputImage)
-
-# showImage('Full Range Scaling', fullRangeLinearScaling(grayImage))
-showImage('Homogenous scaling')
+showImage('Input', inputImage)
+#thresholdGrayImage()
+out = cv.adaptiveThreshold(grayImage, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY,7,2)
+#showImage('Equalization', cv.equalizeHist(grayImage))
+showImage('adaptive', out)
