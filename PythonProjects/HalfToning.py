@@ -11,36 +11,38 @@ if cmd_subfolder not in sys.path:
 
 import image_utils as utils
 
+def HalfToneImage(imageGray):
+    height, width = imageGray.shape
+    imageHalfTone = np.zeros((2*height, 2*width)).astype(np.uint8)
+
+    dict = {0:[[0,0],[0,0]],
+            51:[[255,0],[0,0]],
+            102:[[0,255],[255,0]],
+            153:[[255,255],[255,0]],
+            204:[[255,255],[255,255]]}
+
+    for row in range(height):
+        for col in range(width):
+            val = imageGray[row][col]
+            if(val > 204):
+                imageHalfTone[row*2:row*2+2, col*2:col*2+2] = dict[204]
+            elif(val >153):
+                imageHalfTone[row*2:row*2+2, col*2:col*2+2] = dict[153]
+            elif(val > 102):
+                imageHalfTone[row*2:row*2+2, col*2:col*2+2] = dict[102]
+            elif(val > 51):
+                imageHalfTone[row*2:row*2+2, col*2:col*2+2] = dict[51]
+            else:
+                imageHalfTone[row*2:row*2+2, col*2:col*2+2] = dict[0]
+
+    return imageHalfTone
+
 ap = argparse.ArgumentParser("Classical Half Toning [2x2 Mask]")
 ap.add_argument('-i', '--image', required = True, help = 'Path to image file')
 args = vars(ap.parse_args())
 
 image = cv2.imread(args["image"])
-imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-height, width = imageGray.shape
-imageHalfTone = np.zeros((2*height, 2*width)).astype(np.uint8)
-
-dict = {0:[[0,0],[0,0]],
-        51:[[255,0],[0,0]],
-        102:[[0,255],[255,0]],
-        153:[[255,255],[255,0]],
-        204:[[255,255],[255,255]]}
-
-for row in range(height):
-    for col in range(width):
-        val = imageGray[row][col]
-        if(val > 204):
-            imageHalfTone[row*2:row*2+2, col*2:col*2+2] = dict[204]
-        elif(val >153):
-            imageHalfTone[row*2:row*2+2, col*2:col*2+2] = dict[153]
-        elif(val > 102):
-            imageHalfTone[row*2:row*2+2, col*2:col*2+2] = dict[102]
-        elif(val > 51):
-            imageHalfTone[row*2:row*2+2, col*2:col*2+2] = dict[51]
-        else:
-            imageHalfTone[row*2:row*2+2, col*2:col*2+2] = dict[0]
-
-
-cv2.imshow("HalfTone Image",utils.image_resize(imageHalfTone, height = 600))
+imageHalfTone = cv2.merge([HalfToneImage(x) for x in cv2.split(image)])
+cv2.imshow("HalfTone Image",utils.image_resize(imageHalfTone.astype(np.uint8), height = 600))
 cv2.waitKey()
 cv2.destroyAllWindows()
