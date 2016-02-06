@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b980218-49b8-4a5f-88d4-fbb67e580ba6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/forest.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/horses.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonProjects/FeatureDetection.py" afterPath="$PROJECT_DIR$/PythonProjects/FeatureDetection.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonProjects/EdgesInVideo.py" afterPath="$PROJECT_DIR$/PythonProjects/EdgesInVideo.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ImageProcessingProjects.iws" />
@@ -26,16 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ColorTransform.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/ColorTransform.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ImageScanner.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/ImageScanner.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,26 +34,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EdgesInVideo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonProjects/EdgesInVideo.py">
+      <file leaf-file-name="FeatureDetection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonProjects/FeatureDetection.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
-                <element signature="e#23#56#0" expanded="true" />
+                <element signature="e#23#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FeatureDetection.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PythonProjects/FeatureDetection.py">
+      <file leaf-file-name="EdgesInVideo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonProjects/EdgesInVideo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75596815">
-              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-              <folding>
-                <element signature="e#23#33#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,10 +60,42 @@
         <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/ImageStitching.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="36" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="36" />
+              <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClusterImageColoring.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonProjects/ClusterImageColoring.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EdgeHighlight.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PythonProjects/EdgeHighlight.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.48548812">
+              <caret line="25" column="31" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="31" />
+              <folding>
+                <element signature="e#23#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SkinDetection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/SkinDetection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="73" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,9 +119,10 @@
         <option value="$PROJECT_DIR$/PythonProjects/FloydSteinbergDither.py" />
         <option value="$PROJECT_DIR$/SelfProjectUtils/VisualizeColorChannels.py" />
         <option value="$PROJECT_DIR$/PythonProjects/DayOrNight.py" />
-        <option value="$PROJECT_DIR$/PythonProjects/EdgesInVideo.py" />
         <option value="$PROJECT_DIR$/PyImageSearchProblems/ImageStitching.py" />
         <option value="$PROJECT_DIR$/PythonProjects/FeatureDetection.py" />
+        <option value="$PROJECT_DIR$/PythonProjects/EdgesInVideo.py" />
+        <option value="$PROJECT_DIR$/PythonProjects/EdgeHighlight.py" />
       </list>
     </option>
   </component>
@@ -166,20 +185,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SelfProjectUtils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImageProcessingProjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonImageProcessingProjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="PythonProjects" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -198,24 +203,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImageProcessingProjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonImageProcessingProjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Image_Lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -365,9 +356,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="695" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3272727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -424,7 +415,53 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
-            <element signature="e#23#56#0" expanded="true" />
+            <element signature="e#23#56#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/FeatureDetection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/ImageStitching.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/ColorTransform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/ImageScanner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/EdgesInVideo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="e#23#56#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -464,13 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/HalfToning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4353562">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonProjects/ImageManipulation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6332454">
@@ -499,20 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/ClusterImageColoring.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/SkinDetection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6816976">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="73" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SelfProjectUtils/VisualizeColorChannels.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4376658">
@@ -535,6 +551,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/ImageStitching.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/ClusterImageColoring.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/FeatureDetection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/ImageScanner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -543,30 +587,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/HalfToning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.079155676">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/SkinDetection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="73" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PythonProjects/EdgesInVideo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="e#23#56#0" expanded="true" />
-          </folding>
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/ImageStitching.py">
+    <entry file="file://$PROJECT_DIR$/PythonProjects/EdgeHighlight.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="36" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="36" />
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/FeatureDetection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75596815">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.48548812">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="31" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
           </folding>
