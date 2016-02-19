@@ -11,7 +11,7 @@ import image_utils as utils
 
 ap = argparse.ArgumentParser("Feature Detection in Images")
 ap.add_argument("-i","--image", required = True, help = "Path to image file")
-ap.add_argument("-f","--feature", help = "Feature Detection type. DEFAULT = Harris Corner")
+ap.add_argument("-f","--feature", help = "Feature Detection type. HarrisCorner (DEFAULT), ShiThomasiCorner, SIFT, SURF, FAST, ORB")
 args = vars(ap.parse_args())
 
 image = cv2.imread(args["image"])
@@ -29,10 +29,26 @@ elif args["feature"] == "ShiTomasiCorner":
     for i in corners:
         x,y = i.ravel()
         cv2.circle(image,(x,y),2, [0,255,0], -1) # -1 thickness would fill the circle - any negative value for that case
+
 elif args["feature"] == "SIFT":
-    siftClass = cv2.xfeatures2d.SIFT_create()
+    siftClass = cv2.xfeatures2d.SIFT_create() #DoG to find kps, Histogram of gradients in neighborhood for features
     kps = siftClass.detect(gray, None)
     image = cv2.drawKeypoints(gray, kps,None)
+
+elif args["feature"] == "SURF":
+    surfClass = cv2.xfeatures2d.SURF_create(500) #Difference of box filters (integral images fasten process), wavelets for features
+    kps = surfClass.detect(gray, None)
+    image = cv2.drawKeypoints(gray, kps, None)
+
+elif args["feature"]=="FAST":
+    fastClass = cv2.FastFeatureDetector_create() #check a circular region around to figure if corner or not with threshold
+    kps = fastClass.detect(gray, None)
+    image = cv2.drawKeypoints(gray, kps, None)
+
+elif args["feature"]=="ORB":
+    orb = cv2.ORB_create()
+    kps = orb.detect(gray, None)
+    image = cv2.drawKeypoints(gray, kps, None)
 
 cv2.imshow("Output", utils.image_resize(image, height = 500))
 cv2.waitKey()
