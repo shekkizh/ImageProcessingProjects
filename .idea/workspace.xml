@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b980218-49b8-4a5f-88d4-fbb67e580ba6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonProjects/AnimatedVideo.py" afterPath="$PROJECT_DIR$/PythonProjects/AnimatedVideo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Image_Lib/image_utils.py" afterPath="$PROJECT_DIR$/Image_Lib/image_utils.py" />
     </list>
     <ignored path="ImageProcessingProjects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnimatedVideo.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AnimatedVideo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonProjects/AnimatedVideo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9206349">
-              <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="10" selection-end-column="27" />
               <folding>
                 <element signature="e#23#41#0" expanded="true" />
               </folding>
@@ -49,10 +49,32 @@
         <entry file="file://$PROJECT_DIR$/Image_Lib/image_utils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="35" selection-start-line="17" selection-start-column="4" selection-end-line="18" selection-end-column="35" />
+              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageSharpen.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PythonProjects/ImageSharpen.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5952381">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#23#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VisualizeColorChannels.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SelfProjectUtils/VisualizeColorChannels.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="33" selection-start-line="20" selection-start-column="0" selection-end-line="22" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,26 +129,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EdgesInVideo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonProjects/EdgesInVideo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SkinDetection.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/SkinDetection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="73" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -152,8 +154,10 @@
         <option value="$PROJECT_DIR$/PyImageSearchProblems/ImageStitching.py" />
         <option value="$PROJECT_DIR$/PythonProjects/StitchingFromVideo.py" />
         <option value="$PROJECT_DIR$/PythonProjects/FeatureDetection.py" />
-        <option value="$PROJECT_DIR$/Image_Lib/image_utils.py" />
         <option value="$PROJECT_DIR$/PythonProjects/AnimatedVideo.py" />
+        <option value="$PROJECT_DIR$/Image_Lib/image_utils.py" />
+        <option value="$PROJECT_DIR$/randomCode.py" />
+        <option value="$PROJECT_DIR$/PythonProjects/ImageSharpen.py" />
       </list>
     </option>
   </component>
@@ -203,6 +207,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PythonImageProcessingProjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageProcessingProjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonImageProcessingProjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SelfProjectUtils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -559,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SelfProjectUtils/VisualizeColorChannels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4376658">
-          <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/TemplateMatching.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -693,20 +704,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/AnimatedVideo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelfProjectUtils/VisualizeColorChannels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="33" selection-start-line="20" selection-start-column="0" selection-end-line="22" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Image_Lib/image_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="35" selection-start-line="17" selection-start-column="4" selection-end-line="18" selection-end-column="35" />
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/AnimatedVideo.py">
+    <entry file="file://$PROJECT_DIR$/PythonProjects/ImageSharpen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9206349">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.5952381">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
           </folding>

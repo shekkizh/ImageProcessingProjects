@@ -21,3 +21,7 @@ def autoCanny(image, sigma = 0.33):
 
 def adaptive_threshold(image):
     return cv2.adaptiveThreshold(image, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
+
+def sharpenImage(image):
+    kernel = np.array([[0,-1,0],[-1,5,-1],[0,-1,0]], dtype=np.float)
+    return cv2.filter2D(image, -1, kernel)
