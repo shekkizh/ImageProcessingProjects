@@ -38,13 +38,16 @@ while True:
     #
     # centers = centers.astype("uint8")
     # frame = centers[lbl.flatten()].reshape(frame.shape)
-    frame = 8*(frame/8)
+
+    # frame = 8*(frame/8)
     imageGray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     result = cv2.GaussianBlur(imageGray, (5, 5), 0)
     result = utils.autoCanny(result)
 
     (_, cnts, _) = cv2.findContours(result, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
     # cnts = sorted(cnts, key=cv2.contourArea)
+    # frame = cv2.pyrMeanShiftFiltering(frame,21, 51)
+    frame = 8*(frame/8)
     cv2.drawContours(frame, cnts, -1, (0, 0, 0), 1)
     cv2.imshow("Video", utils.image_resize(frame, height=500))
 
