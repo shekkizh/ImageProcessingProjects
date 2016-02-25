@@ -187,17 +187,23 @@ def main():
     imageB = imutils.resize(imageB, width=400)
 
     # stitch the images together to create a panorama
-    # stitcher = ImageStitcher()
-    # (result, vis) = stitcher.stitch([imageA, imageB], showMatches=True)
-    stitcher = SurfStitcher(imageA)
-    stitcher.stitch(imageB)
+    #SIFT stitcher
+    stitcher = ImageStitcher()
+    (result, vis) = stitcher.stitch([imageA, imageB], showMatches=False)
+    cv2.imshow("Keypoint Matches", vis)
+    cv2.imshow("Result", result)
+
+
+    #Surf Stitcher
+    # stitcher = SurfStitcher(imageA)
+    # stitcher.stitch(imageB)
     # stitcher.saveImage()
+    # cv2.imshow("Result", stitcher.leftImage)
 
     # show the images
-    # cv2.imshow("Image A", imageA)
-    # cv2.imshow("Image B", imageB)
-    # cv2.imshow("Keypoint Matches", vis)
-    cv2.imshow("Result", stitcher.leftImage)
+    cv2.imshow("Image A", imageA)
+    cv2.imshow("Image B", imageB)
+
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 

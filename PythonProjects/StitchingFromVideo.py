@@ -1,4 +1,4 @@
-# Unfinished code - erroneous creates no stitch
+# Works - but frames have to be received slowly - needs better work
 __author__ = 'Charlie'
 import argparse
 import numpy as np
@@ -48,6 +48,7 @@ class SurfStitcher:
         result[0:leftImageShape[0], 0:leftImageShape[1]] = self.leftImage
 
     #     Update leftImage stats
+    #     print(H)
         print("Stitch done!")
         self.leftImage = result
         self.leftKps = rightKps
@@ -91,15 +92,16 @@ def main():
         camera = cv2.VideoCapture(0)
     else:
         camera = cv2.VideoCapture(args["video"])
-    for i in range(10):
+    for i in range(10): #ignore first 10 frames to avoid black frames in camera video capture
         grabbed, frame = camera.read()
     if grabbed:
         imageStitcher = SurfStitcher(frame)
         # showImage(frame)
         # cv2.imwrite("Image1.jpg", frame)
 
-    for i in range(4):
-        grabbed, frame = camera.read()
+    for i in range(3):
+        for i in range(10):
+            grabbed, frame = camera.read()
         if not grabbed:
             break
 
@@ -110,7 +112,7 @@ def main():
 
         if cv2.waitKey(1000) & 0xFF == ord('q'):
             break
-            # imageStitcher.stitch(frame)
+
 
     imageStitcher.saveImage()
     cv2.destroyAllWindows()
