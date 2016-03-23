@@ -13,7 +13,8 @@ import image_utils as utils
 
 LARGE_VAL = float('Inf')
 
-ap = argparse.ArgumentParser("Content Aware Image resizing - only width reduction DO NOT CHANGE AXIS")
+ap = argparse.ArgumentParser("Content Aware Image resizing -- Energy estimation done only once at beginning\
+                             Will cause distortion with high size reduction")
 ap.add_argument("-i", "--image", required=True, help="Path to image file to resize")
 ap.add_argument("-a", "--axis", required=False, help="Axis by which to reduce size\
                                                      0 = height, 1= width. Default 1")

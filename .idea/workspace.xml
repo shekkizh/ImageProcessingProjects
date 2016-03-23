@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b980218-49b8-4a5f-88d4-fbb67e580ba6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Image_Lib/image_utils.py" afterPath="$PROJECT_DIR$/Image_Lib/image_utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonProjects/ContentAwareResizing.py" afterPath="$PROJECT_DIR$/PythonProjects/ContentAwareResizing.py" />
     </list>
     <ignored path="ImageProcessingProjects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ContentAwareResizing.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ContentAwareResizing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PythonProjects/ContentAwareResizing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.6315789">
+              <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
               <folding>
                 <element signature="e#24#42#0" expanded="true" />
               </folding>
@@ -35,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image_utils.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="image_utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Image_Lib/image_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56578946">
+            <state vertical-scroll-proportion="0.0">
               <caret line="32" column="40" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="40" />
               <folding />
             </state>
@@ -87,8 +87,8 @@
         <option value="$PROJECT_DIR$/PythonProjects/ImageStitching.py" />
         <option value="$PROJECT_DIR$/PythonProjects/StitchingFromVideo.py" />
         <option value="$PROJECT_DIR$/PythonProjects/SnapImage.py" />
-        <option value="$PROJECT_DIR$/PythonProjects/ContentAwareResizing.py" />
         <option value="$PROJECT_DIR$/Image_Lib/image_utils.py" />
+        <option value="$PROJECT_DIR$/PythonProjects/ContentAwareResizing.py" />
       </list>
     </option>
   </component>
@@ -689,21 +689,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/ContentAwareResizing.py">
+    <entry file="file://$PROJECT_DIR$/Image_Lib/image_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding>
-            <element signature="e#24#42#0" expanded="true" />
-          </folding>
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Image_Lib/image_utils.py">
+    <entry file="file://$PROJECT_DIR$/PythonProjects/ContentAwareResizing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56578946">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="40" />
-          <folding />
+        <state vertical-scroll-proportion="0.6315789">
+          <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+          <folding>
+            <element signature="e#24#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
