@@ -22,7 +22,7 @@ ap.add_argument("-p", "--percent", required=False, help="Percentage by which to 
 args = vars(ap.parse_args())
 
 if not args.get("percent", False):
-    width_reduction = 0.5
+    width_reduction = 0.1
 else:
     width_reduction = float(args["percent"])/100
 
@@ -32,15 +32,18 @@ else:
     rotate = not int(args["axis"])
 
 image =cv2.imread(args["image"])
+print "Image shape",
+print image.shape
 
 if rotate:
     print "rotating image"
     image = utils.image_rotate_by_90_clockwise(image)
 
-gradient_energy = cv2.Laplacian(cv2.cvtColor(image,cv2.COLOR_BGR2GRAY), cv2.CV_64F)
+# gradient_energy = cv2.Laplacian(cv2.cvtColor(image,cv2.COLOR_BGR2GRAY), cv2.CV_64F)
+gradient_energy_x = cv2.convertScaleAbs(cv2.Sobel((cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)), cv2.CV_64F, 1, 0, ksize=3))
+gradient_energy_y = cv2.convertScaleAbs(cv2.Sobel((cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)), cv2.CV_64F, 0, 1, ksize=3))
+gradient_energy = cv2.addWeighted(gradient_energy_x, 0.5, gradient_energy_y, 0.5, 0)
 image_shape = image.shape
-print "Image shape",
-print image_shape
 
 seam_energy_map = LARGE_VAL * np.ones((image_shape[0], image_shape[1]+2)) #Padding image on all sides
 

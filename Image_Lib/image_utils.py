@@ -33,5 +33,5 @@ def image_rotate_by_90_clockwise(image):
 
 def image_rotate_by_90_anticlockwise(image):
     rows, cols, depth = image.shape
-    M = cv2.getRotationMatrix2D((cols/2,rows/2),270,1)
+    M = cv2.getRotationMatrix2D((cols/2,rows/2),-90,1)
     return cv2.warpAffine(image, M,(rows,cols))
