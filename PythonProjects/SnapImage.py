@@ -21,18 +21,18 @@ output = image.copy()
 width = image.shape[1]
 height = image.shape[0]
 
-mask = {0:(slice(0,height/2), slice(0,width/2)), 1:(slice(height/2,height), slice(width/2,width)),\
-        2:(slice(height/2,height), slice(0,width/2)), 3:(slice(0, height/2), slice(width/2,width))}
+mask = {0: (slice(0, height / 2), slice(0, width / 2)), 1: (slice(height / 2, height), slice(width / 2, width)), \
+        2: (slice(height / 2, height), slice(0, width / 2)), 3: (slice(0, height / 2), slice(width / 2, width))}
 image1 = image.copy()
-image1[mask[0]] = cv2.blur(image1[mask[0]], (15,15))
+image1[mask[0]] = cv2.GaussianBlur(image1[mask[0]], (5, 5), 0)
 image2 = image.copy()
-image2[mask[1]] = cv2.blur(image2[mask[1]], (15,15))
+image2[mask[1]] = cv2.GaussianBlur(image2[mask[1]], (5, 5), 0)
 image3 = image.copy()
-image3[mask[2]] = cv2.blur(image3[mask[2]], (15,15))
+image3[mask[2]] = cv2.GaussianBlur(image3[mask[2]], (5, 5), 0)
 image4 = image.copy()
-image4[mask[3]] = cv2.blur(image4[mask[3]], (15,15))
+image4[mask[3]] = cv2.GaussianBlur(image4[mask[3]], (5, 5), 0)
 
-imageDictionary = {0:image1, 1:image2, 2:image3, 3:image4}
+imageDictionary = {0: image1, 1: image2, 2: image3, 3: image4}
 
 count = 0
 n = 0
@@ -43,7 +43,7 @@ out = cv2.VideoWriter('output.mov', fourcc, 200.0, (width, height))
 
 while True:
     output = imageDictionary[count]
-    count+=1
+    count += 1
     n += 1
     if count == 4:
         count = 0

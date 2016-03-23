@@ -25,3 +25,13 @@ def adaptive_threshold(image):
 def sharpenImage(image):
     kernel = np.array([[0,-1,0],[-1,5,-1],[0,-1,0]], dtype=np.float)
     return cv2.filter2D(image, -1, kernel)
+
+def image_rotate_by_90_clockwise(image):
+    rows, cols, depth = image.shape
+    M = cv2.getRotationMatrix2D((cols/2,rows/2),90,1)
+    return cv2.warpAffine(image, M,(rows,cols))
+
+def image_rotate_by_90_anticlockwise(image):
+    rows, cols, depth = image.shape
+    M = cv2.getRotationMatrix2D((cols/2,rows/2),270,1)
+    return cv2.warpAffine(image, M,(rows,cols))
