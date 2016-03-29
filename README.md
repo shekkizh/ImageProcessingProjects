@@ -8,3 +8,19 @@ This repository is a collection of all things fun in image processing achieved w
  4. SelfProjectUtils - Code that I usually use to understand images for tuning parameters in other projects and such.
  
  
+Example results:
+ - With the availability of displays in various sizes, image retargeting or image resizing with content awareness is something that's done frequently nowadays.  A simple implementation of seam carving a well known method and it's result(width reduction by 20%) is as below.  Note that the content of the image is not scaled or cropped.
+   
+![Input image](https://github.com/shekkizh/ImageProcessingProjects/blob/master/Dog.jpg)                  ![Seam reduced image](https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/20PercentWidthReduction.jpg)
+
+-  Panoramic image stitching using SIFT/ SURF features.
+
+<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/Image1.jpg" width = "400" height = "300"/>            <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/Image2.jpg" width = "400" height = "300"/>
+<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/ImageStitiching.jpg" width = "800" height = "300"/>  
+-  Image Cartooning. 
+
+![Image](https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/CartoonishImaging.jpg)
+
+-  Color transforms and compression.
+
+<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/10ClusterImage.jpg" width = "400" height = "300"/>       <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/ImageDithering.jpg" width = "400" height = "300"/>       <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/OldSchoolSadnessFilter.jpg" width = "400" height = "300"/>       <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/StatisticalColorTransform.jpg" width = "400" height = "300"/>
