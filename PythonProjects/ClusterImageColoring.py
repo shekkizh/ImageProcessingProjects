@@ -26,6 +26,8 @@ ret, lbl, centers = cv2.kmeans(data, K, None, termination, 3, cv2.KMEANS_PP_CENT
 
 centers = centers.astype("uint8")
 result = centers[lbl.flatten()]
-cv2.imshow("Result", utils.image_resize(result.reshape(image.shape), height = 500))
+output = result.reshape(image.shape)
+cv2.imshow("Result", utils.image_resize(output, height = 500))
+cv2.imwrite("result.jpg", output)
 cv2.waitKey()
 cv2.destroyAllWindows()

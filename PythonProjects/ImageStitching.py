@@ -177,20 +177,20 @@ class SurfStitcher:
 
 def main():
     ap = argparse.ArgumentParser("Image Stitching")
-    ap.add_argument("--first", required=True, help="Path to first image to be stiched")
-    ap.add_argument("--second", required=True, help="Path to second image to be stitched")
+    ap.add_argument("-i1","--image1", required=True, help="Path to first image to be stiched")
+    ap.add_argument("-i2","--image2", required=True, help="Path to second image to be stitched")
     args = vars(ap.parse_args())
 
-    imageA = cv2.imread(args["first"])
-    imageB = cv2.imread(args["second"])
+    imageA = cv2.imread(args["image1"])
+    imageB = cv2.imread(args["image2"])
     imageA = imutils.resize(imageA, width=400)
     imageB = imutils.resize(imageB, width=400)
 
     # stitch the images together to create a panorama
     #SIFT stitcher
     stitcher = ImageStitcher()
-    (result, vis) = stitcher.stitch([imageA, imageB], showMatches=False)
-    cv2.imshow("Keypoint Matches", vis)
+    result = stitcher.stitch([imageA, imageB], showMatches=False)
+    # cv2.imshow("Keypoint Matches", vis)
     cv2.imshow("Result", result)
 
 
@@ -206,7 +206,7 @@ def main():
 
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-
+    cv2.imwrite("results.jpg", result)
 
 if __name__ == "__main__":
     main()

@@ -1,4 +1,6 @@
 __author__ = 'Charlie'
+#An attempt at implementing colors to setup the emotion when visualizing the iamge
+#Motivation: https://en.wikipedia.org/wiki/Contrasting_and_categorization_of_emotions#Plutchik.27s_wheel_of_emotions
 import numpy as np, cv2 as cv
 
 def imageRead(filename):
@@ -43,8 +45,10 @@ class ColorFilter:
         return self.image
 
 
-inputImage = cv.imread('113016.jpg')
+inputImage = cv.imread('Image1.jpg')
 colorFilter = ColorFilter()
 colorFilter.set_image(inputImage)
-colorFilter.set_target_color(np.array([[[0, 0, 255]]], dtype= np.uint8))
-showImage('Output', (0*inputImage + colorFilter.filter()).astype(np.uint8))
+colorFilter.set_target_color(np.array([[[0, 0, 224]]], dtype= np.uint8))
+output = (0.3*inputImage + 0.7*colorFilter.filter()).astype(np.uint8)
+showImage('Output', output)
+cv.imwrite("results.jpg", output)

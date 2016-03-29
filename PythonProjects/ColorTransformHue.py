@@ -24,32 +24,32 @@ source = cv2.cvtColor(cv2.imread(args["source"]), cv2.COLOR_BGR2HSV).astype("flo
 target = cv2.cvtColor(cv2.imread(args["target"]), cv2.COLOR_BGR2HSV).astype("float32")
 
 (h,s,v) = cv2.split(source)
-# (srcLMean, srcLStd) = (h.mean(), h.std())
-(srcVMean, srcVStd) = (v.mean(), v.std())
+(srcLMean, srcLStd) = (h.mean(), h.std())
+# (srcVMean, srcVStd) = (v.mean(), v.std())
 
 (h, s, v) = cv2.split(target)
-# (tarLMean, tarLStd) = (h.mean(), h.std())
-(tarVMean, tarVStd) = (v.mean(), v.std())
+(tarLMean, tarLStd) = (h.mean(), h.std())
+# (tarVMean, tarVStd) = (v.mean(), v.std())
 
 #subtract mean value of image
-# h -= tarLMean
-v -= tarVMean
+h -= tarLMean
+# v -= tarVMean
 
 #scale std deviation based on source image
-# h *= (tarLStd/srcLStd)
-v *= (tarVStd/srcVStd)
+h *= (tarLStd/srcLStd)
+# v *= (tarVStd/srcVStd)
 
 #add source image mean to target
-# h += srcLMean
-v += srcVMean
+h += srcLMean
+# v += srcVMean
 
 # clip the pixel intensities to [0, 255] if they fall outside
 # this range
-# h = np.clip(h, 0, 360)
-# h *= 0.5
+h = np.clip(h, 0, 360)
+h *= 0.5
 
-v += 128
-v= np.clip(v, 0, 255)
+# v += 128
+# v= np.clip(v, 0, 255)
 
 # merge the channels together and convert back to the RGB color
 # space, being sure to utilize the 8-bit unsigned integer data
@@ -60,3 +60,4 @@ transfer = cv2.cvtColor(transfer.astype("uint8"), cv2.COLOR_HSV2BGR)
 cv2.imshow("Color Transform", utils.image_resize(transfer, height = 500))
 cv2.waitKey()
 cv2.destroyAllWindows()
+cv2.imwrite("result.jpg", transfer)

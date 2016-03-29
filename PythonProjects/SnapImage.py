@@ -1,4 +1,5 @@
 __author__ = 'Charlie'
+#An attempt at image security where screenshots will not be able to capture image
 import cv2
 import numpy as np
 import argparse, sys, inspect, os

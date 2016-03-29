@@ -1,4 +1,5 @@
 __author__ = 'Charlie'
+#Idea: https://en.wikipedia.org/wiki/Seam_carving
 
 import numpy as np
 import cv2
@@ -95,3 +96,4 @@ cv2.imshow("Input", image)
 cv2.imshow("Output", image_seam_reduced)
 cv2.waitKey()
 cv2.destroyAllWindows()
+cv2.imwrite("results.jpg", image_seam_reduced)

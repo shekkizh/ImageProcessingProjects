@@ -28,12 +28,10 @@ def sharpenImage(image):
 
 def image_rotate_by_90_clockwise(image):
     rows, cols, depth = image.shape
-    center = max(rows, cols)
-    M = cv2.getRotationMatrix2D((center/2,center/2),90,1)
+    M = cv2.getRotationMatrix2D((cols/2,rows/2),90,1)
     return cv2.warpAffine(image, M,(rows,cols))
 
 def image_rotate_by_90_anticlockwise(image):
     rows, cols, depth = image.shape
-    center = max(rows, cols)
-    M = cv2.getRotationMatrix2D((center/2,center/2),-90,1)
+    M = cv2.getRotationMatrix2D((cols/2,rows/2),-90,1)
     return cv2.warpAffine(image, M,(rows,cols))
