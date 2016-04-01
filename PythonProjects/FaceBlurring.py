@@ -21,26 +21,29 @@ if not args.get("video", False):
 else:
     camera = cv2.VideoCapture(args["video"])
 
-face_cascade = cv2.CascadeClassifier('Image_Lib/haarcascade_frontalface_alt2.xml')
+face_cascade = cv2.CascadeClassifier('Image_Lib/Face_Data/haarcascade_frontalface_default.xml')
 
 while (True):
     grabbed, frame = camera.read()
     if not grabbed:
         print "Camera read failed!"
         break
-    gray_image = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
     frame = utils.image_resize(frame, height=600)
+    gray_image = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    # black_frame = np.zeros(frame.shape)
+    faces = face_cascade.detectMultiScale(gray_image, 1.2, 2)
 
-    faces = face_cascade.detectMultiScale(gray_image, 1.3, 5)
-    # print len(faces)
-    # cv2.drawContours(frame, map(cv2.boxPoints, faces), -1, (0, 255, 0), 2)
-    for (x,y,w,h) in faces:
-        cv2.rectangle(frame, (x,y), (x+w, y+h), (0,255,0),2)
-        roi = frame[y:y+h, x:x+w,:]
-        frame[y:y+h, x:x+w,:] = 0
-        # frame[y:y+h, x:x+w,:] = cv2.GaussianBlur(roi, (3,3),0)
+    if(len(faces) > 0):
+        for (x,y,w,h) in faces:
+            cv2.rectangle(frame, (x,y), (x+w, y+h), (0,255,0),2)
+            roi = frame[y:y+h, x:x+w,:]
+            # noise = (np.random.randn(roi.shape[0], roi.shape[1], roi.shape[2])).reshape(roi.shape)
+            frame[y:y+h, x:x+w,:] = cv2.GaussianBlur(roi, (25,25), 100) #roi + roi*noise
+            cv2.imshow("Output", frame)
+    # else:
+    #     cv2.imshow("Output", black_frame)
 
-    cv2.imshow("Output", frame)
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
 
