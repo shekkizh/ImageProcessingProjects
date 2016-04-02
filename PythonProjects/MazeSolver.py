@@ -1,4 +1,6 @@
 __author__ = 'Charlie'
+#Idea from http://opencv-code.com
+
 import os, sys, inspect
 import cv2
 import numpy as np
