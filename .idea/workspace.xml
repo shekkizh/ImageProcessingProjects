@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b980218-49b8-4a5f-88d4-fbb67e580ba6" name="Default" comment="c">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonProjects/EyeTracking.py" afterPath="$PROJECT_DIR$/PythonProjects/EyeTracking.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyImageSearchProblems/ImageScanner.py" afterPath="$PROJECT_DIR$/PyImageSearchProblems/ImageScanner.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyImageSearchProblems/SkinDetection.py" afterPath="$PROJECT_DIR$/PyImageSearchProblems/SkinDetection.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Image_Lib/image_transform.py" afterPath="$PROJECT_DIR$/Image_Lib/image_transform.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Image_Lib/image_utils.py" afterPath="$PROJECT_DIR$/Image_Lib/image_utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="7b980218-49b8-4a5f-88d4-fbb67e580ba6" name="Default" comment="c" />
     <ignored path="ImageProcessingProjects.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,35 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UnwarpPresentationSnaps.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PythonProjects/UnwarpPresentationSnaps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72286373">
-              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-              <folding>
-                <element signature="e#23#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image_transform.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Image_Lib/image_transform.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-              <folding>
-                <element signature="e#61#79#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HandTracking.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HandTracking.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PythonProjects/HandTracking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.20323326">
+              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -102,13 +71,13 @@
         <option value="$PROJECT_DIR$/SelfProjectUtils/VisualizeColorChannels.py" />
         <option value="$PROJECT_DIR$/PythonProjects/MazeSolver.py" />
         <option value="$PROJECT_DIR$/PyImageSearchProblems/SkinDetection.py" />
-        <option value="$PROJECT_DIR$/PythonProjects/HandTracking.py" />
         <option value="$PROJECT_DIR$/PythonProjects/EyeTracking.py" />
         <option value="$PROJECT_DIR$/SelfProjectUtils/randomCode.py" />
         <option value="$PROJECT_DIR$/PyImageSearchProblems/ImageScanner.py" />
         <option value="$PROJECT_DIR$/Image_Lib/image_utils.py" />
         <option value="$PROJECT_DIR$/PythonProjects/UnwarpPresentationSnaps.py" />
         <option value="$PROJECT_DIR$/Image_Lib/image_transform.py" />
+        <option value="$PROJECT_DIR$/PythonProjects/HandTracking.py" />
       </list>
     </option>
   </component>
@@ -375,9 +344,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="695" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23801653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23801653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -687,7 +656,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
           <folding>
-            <element signature="e#23#41#0" expanded="true" />
+            <element signature="e#23#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -746,14 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/HandTracking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Image_Lib/image_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.269685">
@@ -770,16 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Image_Lib/image_transform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-          <folding>
-            <element signature="e#61#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonProjects/UnwarpPresentationSnaps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72286373">
@@ -787,6 +738,24 @@
           <folding>
             <element signature="e#23#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Image_Lib/image_transform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.034642033">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+          <folding>
+            <element signature="e#61#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/HandTracking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20323326">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
