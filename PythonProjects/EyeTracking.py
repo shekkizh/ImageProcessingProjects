@@ -31,7 +31,6 @@ while True:
         break
 
     frame = utils.image_resize(frame, height=600)
-    frame = cv2.GaussianBlur(frame, (7, 7), 0)
     gray_image = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray_image, 1.3, 5)
 
@@ -42,7 +41,7 @@ while True:
             color_roi = frame[y:y + h, x:x + w]
             eyes = eye_cascade.detectMultiScale(gray_roi, 1.1, 4)
             print len(eyes)
-            if len(eyes) == 2:
+            if len(eyes) > 0:
                 for ex, ey, ew, eh in eyes:
                     cv2.rectangle(color_roi, (ex, ey), (ex + ew, ey + eh), (255, 255, 0), 2)
                     gray_eye_roi = gray_roi[ey:ey + eh, ex:ex + ew]
