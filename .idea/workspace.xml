@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b980218-49b8-4a5f-88d4-fbb67e580ba6" name="Default" comment="c">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Image_Lib/haarcascade_frontalface_alt2.xml" afterPath="$PROJECT_DIR$/Image_Lib/Face_Data/haarcascade_frontalface_alt2.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Image_Lib/haarcascade_frontalface_default.xml" afterPath="$PROJECT_DIR$/Image_Lib/Face_Data/haarcascade_frontalface_default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonProjects/FaceBlurring.py" afterPath="$PROJECT_DIR$/PythonProjects/FaceBlurring.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonProjects/EyeTracking.py" afterPath="$PROJECT_DIR$/PythonProjects/EyeTracking.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyImageSearchProblems/ImageScanner.py" afterPath="$PROJECT_DIR$/PyImageSearchProblems/ImageScanner.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyImageSearchProblems/SkinDetection.py" afterPath="$PROJECT_DIR$/PyImageSearchProblems/SkinDetection.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Image_Lib/image_transform.py" afterPath="$PROJECT_DIR$/Image_Lib/image_transform.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Image_Lib/image_utils.py" afterPath="$PROJECT_DIR$/Image_Lib/image_utils.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ImageProcessingProjects.iws" />
@@ -26,31 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SnapImage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonProjects/SnapImage.py">
+      <file leaf-file-name="UnwarpPresentationSnaps.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PythonProjects/UnwarpPresentationSnaps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="85" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContentAwareResizing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonProjects/ContentAwareResizing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FaceBlurring.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PythonProjects/FaceBlurring.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3888888">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.72286373">
+              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
               <folding>
                 <element signature="e#23#41#0" expanded="true" />
               </folding>
@@ -58,23 +40,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SizeObjectsWithRef.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonProjects/SizeObjectsWithRef.py">
+      <file leaf-file-name="image_transform.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Image_Lib/image_transform.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="63" column="122" selection-start-line="63" selection-start-column="122" selection-end-line="63" selection-end-column="122" />
+              <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
               <folding>
-                <element signature="e#104#114#0" expanded="true" />
+                <element signature="e#61#79#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SkinDetection.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/SkinDetection.py">
+      <file leaf-file-name="HandTracking.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonProjects/HandTracking.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="13" selection-start-line="68" selection-start-column="4" selection-end-line="69" selection-end-column="13" />
+              <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -96,7 +78,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/SelfProjectUtils/HalfToning.py" />
-        <option value="$PROJECT_DIR$/SelfProjectUtils/VisualizeColorChannels.py" />
         <option value="$PROJECT_DIR$/PythonProjects/DayOrNight.py" />
         <option value="$PROJECT_DIR$/PythonProjects/EdgesInVideo.py" />
         <option value="$PROJECT_DIR$/PythonProjects/HalfToning.py" />
@@ -113,13 +94,21 @@
         <option value="$PROJECT_DIR$/PythonProjects/ImageStitching.py" />
         <option value="$PROJECT_DIR$/PythonProjects/SnapImage.py" />
         <option value="$PROJECT_DIR$/PythonProjects/ColorFilter.py" />
-        <option value="$PROJECT_DIR$/Image_Lib/image_transform.py" />
-        <option value="$PROJECT_DIR$/Image_Lib/image_utils.py" />
         <option value="$PROJECT_DIR$/PythonProjects/SizeObjectsWithRef.py" />
         <option value="$PROJECT_DIR$/PythonProjects/ContentAwareResizing.py" />
         <option value="$PROJECT_DIR$/PythonProjects/FaceTracking.py" />
         <option value="$PROJECT_DIR$/PythonProjects/MaskFace.py" />
         <option value="$PROJECT_DIR$/PythonProjects/FaceBlurring.py" />
+        <option value="$PROJECT_DIR$/SelfProjectUtils/VisualizeColorChannels.py" />
+        <option value="$PROJECT_DIR$/PythonProjects/MazeSolver.py" />
+        <option value="$PROJECT_DIR$/PyImageSearchProblems/SkinDetection.py" />
+        <option value="$PROJECT_DIR$/PythonProjects/HandTracking.py" />
+        <option value="$PROJECT_DIR$/PythonProjects/EyeTracking.py" />
+        <option value="$PROJECT_DIR$/SelfProjectUtils/randomCode.py" />
+        <option value="$PROJECT_DIR$/PyImageSearchProblems/ImageScanner.py" />
+        <option value="$PROJECT_DIR$/Image_Lib/image_utils.py" />
+        <option value="$PROJECT_DIR$/PythonProjects/UnwarpPresentationSnaps.py" />
+        <option value="$PROJECT_DIR$/Image_Lib/image_transform.py" />
       </list>
     </option>
   </component>
@@ -154,7 +143,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -183,6 +171,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="SelfProjectUtils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageProcessingProjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonImageProcessingProjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="PythonProjects" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -197,7 +199,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Image_Lib" />
+              <option name="myItemId" value="PyImageSearchProblems" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -214,14 +216,11 @@
               <option name="myItemId" value="Image_Lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Face_Data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -378,12 +377,14 @@
     <frame x="0" y="23" width="1280" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32669982" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23801653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25496426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -391,11 +392,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -416,16 +415,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PythonProjects/ContentAwareResizing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#74#92#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Image_Lib/image_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -438,37 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#23#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/ContentAwareResizing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#74#92#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Image_Lib/image_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/AnimatedVideo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#23#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -504,9 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -622,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SelfProjectUtils/VisualizeColorChannels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24603175">
-          <caret line="22" column="33" selection-start-line="20" selection-start-column="0" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonProjects/HalfToning.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17195767">
@@ -647,7 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.59210527">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -655,9 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.9736842">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#52#81#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6052632">
           <caret line="208" column="37" selection-start-line="208" selection-start-column="37" selection-end-line="208" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,7 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.6842105">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -689,7 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35526314">
           <caret line="13" column="108" selection-start-line="13" selection-start-column="108" selection-end-line="13" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,15 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0657895">
           <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/ColorTransformHue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21052632">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,17 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7236842">
           <caret line="50" column="40" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Image_Lib/image_transform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15526316">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -731,31 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33144477">
           <caret line="77" column="35" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/EdgeHighlight.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1842105">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Image_Lib/image_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0263157">
-          <caret line="72" column="57" selection-start-line="72" selection-start-column="57" selection-end-line="72" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/ContentAwareResizing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -763,50 +658,132 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15873016">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/SnapImage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.23809524">
+          <caret line="1" column="85" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/EdgeHighlight.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8910891">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/ColorTransformHue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4059406">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/FaceBlurring.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/ImageScanner.py">
+    <entry file="file://$PROJECT_DIR$/PythonProjects/SizeObjectsWithRef.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0317461">
-          <caret line="71" column="20" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="20" />
+        <state vertical-scroll-proportion="1.5643564">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/MazeSolver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05940594">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelfProjectUtils/randomCode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.738189">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/SizeObjectsWithRef.py">
+    <entry file="file://$PROJECT_DIR$/PythonProjects/EyeTracking.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="122" selection-start-line="63" selection-start-column="122" selection-end-line="63" selection-end-column="122" />
-          <folding>
-            <element signature="e#104#114#0" expanded="true" />
-          </folding>
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/SkinDetection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="13" selection-start-line="68" selection-start-column="4" selection-end-line="69" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.114173226">
+          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/SnapImage.py">
+    <entry file="file://$PROJECT_DIR$/PythonProjects/ContentAwareResizing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="85" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="85" />
+        <state vertical-scroll-proportion="0.35433072">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PythonProjects/FaceBlurring.py">
+    <entry file="file://$PROJECT_DIR$/SelfProjectUtils/VisualizeColorChannels.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3888888">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.084645666">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="15" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/HandTracking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Image_Lib/image_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.269685">
+          <caret line="70" column="128" selection-start-line="70" selection-start-column="128" selection-end-line="70" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyImageSearchProblems/ImageScanner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4896073">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Image_Lib/image_transform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+          <folding>
+            <element signature="e#61#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonProjects/UnwarpPresentationSnaps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72286373">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
           </folding>
