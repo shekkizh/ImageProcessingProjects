@@ -11,11 +11,11 @@ This repository is a collection of all things fun in image processing achieved w
 Few example results:
  - With the availability of displays in various sizes, image retargeting or image resizing with content awareness is something that's done frequently nowadays.  A simple implementation of seam carving a well known method and it's result(width reduction by 20%) is as below.  Note that the content of the image is not scaled or cropped.
    
-![Input image](https://github.com/shekkizh/ImageProcessingProjects/blob/master/Dog.jpg)                  ![Seam reduced image](https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/20PercentWidthReduction.jpg)
+![Input image](https://github.com/shekkizh/ImageProcessingProjects/blob/master/images/Dog.jpg)                  ![Seam reduced image](https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/20PercentWidthReduction.jpg)
 
 -  Panoramic image stitching using SIFT/ SURF features.
 
-<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/Image1.jpg" width = "400" height = "300"/>            <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/Image2.jpg" width = "400" height = "300"/>
+<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/images/Image1.jpg" width = "400" height = "300"/>            <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/images/Image2.jpg" width = "400" height = "300"/>
 <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/ImageStitiching.jpg" width = "800" height = "300"/>  
 -  Image Cartooning. 
 
@@ -27,8 +27,15 @@ Few example results:
 
 -   Auto detect size of objects in images given a reference object. In the example below the height of iPhoneSE (Reference object in this case) was the only value that was provided to the algorithm.
 
-<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/AutoDetectedPhoneSize.jpg" width = "449" height = "290"/>   <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/ActualPhoneSize.jpg" width = "400" height = "175"/>
+<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/AutoDetectedPhoneSize.jpg" width = "449" height = "290"/>   <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/images/ActualPhoneSize.jpg" width = "400" height = "175"/>
 
 -   Maze solver - an automatic maze path finder.
 
 <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/MazeSolver50x50.jpg" width = "400" height = "400"/>   
+-  A few days back when I was at a meetup I noticed people taking pictures of the presentation and I realized I could with some processing could give them a better picture of the slides. So here it is unwarped and centered :)
+
+<img src="https://www.cloudfoundry.org/wp-content/uploads/2016/02/Ben.jpg" width = "300" height = "225"/> <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/Unwarping%20presentations/unwarped_presentation2.jpg" width = "335" height = "242"/>
+
+Works decently good when there is some occlusion as well
+
+<img src="https://cdn-images-1.medium.com/max/800/1*lWxJOEOSEWmTcRyky0Vc0w.jpeg" width = "400" height = "300"/> <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/Unwarping%20presentations/unwarped_presentation3.jpg"/>
