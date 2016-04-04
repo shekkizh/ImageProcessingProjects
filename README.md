@@ -15,15 +15,15 @@ Few example results:
 
 -  Panoramic image stitching using SIFT/ SURF features.
 
-<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/images/Image1.jpg" width = "400" height = "300"/>            <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/images/Image2.jpg" width = "400" height = "300"/>
-<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/ImageStitiching.jpg" width = "800" height = "300"/>  
+<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/images/Image1.jpg" width = "300" height = "225"/>            <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/images/Image2.jpg" width = "300" height = "225"/>
+<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/ImageStitiching.jpg" width = "600" height = "225"/>  
 -  Image Cartooning. 
 
 ![Image](https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/CartoonishImaging.jpg)
 
 -  Color transforms and compression.
 
-<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/10ClusterImage.jpg" width = "400" height = "300"/>       <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/ImageDithering.jpg" width = "400" height = "300"/>       <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/OldSchoolSadnessFilter.jpg" width = "400" height = "300"/>       <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/StatisticalColorTransform.jpg" width = "400" height = "300"/>
+<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/10ClusterImage.jpg" width = "200" height = "150"/>       <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/ImageDithering.jpg" width = "200" height = "150"/>       <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/OldSchoolSadnessFilter.jpg" width = "200" height = "150"/>       <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/StatisticalColorTransform.jpg" width = "200" height = "150"/>
 
 -   Auto detect size of objects in images given a reference object. In the example below the height of iPhoneSE (Reference object in this case) was the only value that was provided to the algorithm.
 
