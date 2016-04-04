@@ -32,7 +32,7 @@ Few example results:
 -   Maze solver - an automatic maze path finder.
 
 <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/MazeSolver50x50.jpg" width = "400" height = "400"/>   
--  A few days back when I was at a meetup I noticed people taking pictures of the presentation and I realized I could with some processing could give them a better picture of the slides. So here it is unwarped and centered :)
+-  A few days back when I was at a meetup I noticed people taking pictures of the presentation and I realized I could with some code make the whole thing better. So here it is unwarped and centered :)
 
 <img src="https://www.cloudfoundry.org/wp-content/uploads/2016/02/Ben.jpg" width = "300" height = "225"/> <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/Unwarping%20presentations/unwarped_presentation2.jpg" width = "335" height = "242"/>
 
