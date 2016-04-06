@@ -96,3 +96,15 @@ def sort_contours(cnts, method="left_to_right"):
 
 def get_midpoint(ptA, ptB):
     return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
+
+def detect_face(face_cascade, image):
+    gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    faces = face_cascade.detectMultiScale(gray_image, 1.3, 5)
+    if len(faces) > 0:
+        return max(faces, key=lambda item: item[2] * item[3])
+
+    return None
+
+
+def add_text(image, text):
+    cv2.putText(image, text, (15, 15), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)

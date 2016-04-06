@@ -83,16 +83,6 @@ def stereo_match(imgL, imgR):
     disparity_scaled[disparity_scaled < 0] = 0
     return np.array(255 * disparity_scaled, np.uint8)
 
-
-def detect_face(image):
-    gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiScale(gray_image, 1.3, 5)
-    if len(faces) > 0:
-        return max(faces, key=lambda item: item[2] * item[3])
-
-    return None
-
-
 def get_resized_image(image, face):
     x, y, w, h = face
     return cv2.resize(image[y:y + h, x:x + w], (150, 150))
@@ -116,7 +106,7 @@ if __name__ == '__main__':
         if not grabbed:
             raise EnvironmentError("Camera read failed!")
         img = frame
-        face_box = detect_face(img)
+        face_box = utils.detect_face(face_cascade, img)
 
     img_ref = get_resized_image(img, face_box)
     print img_ref.shape
@@ -126,7 +116,7 @@ if __name__ == '__main__':
     while (True):
         _, frame = camera.read()
         img = frame
-        face_box = detect_face(img)
+        face_box = utils.detect_face(face_cascade, img)
 
         if face_box is not None:
             img_curr = get_resized_image(img, face_box)

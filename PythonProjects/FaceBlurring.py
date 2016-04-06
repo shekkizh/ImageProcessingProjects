@@ -52,15 +52,6 @@ cv2.destroyAllWindows()
 
 
 
-def detect_face(image):
-    print "detecting face..."
-    gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiScale(gray_image, 1.3, 5)
-    if len(faces) > 0:
-        return max(faces, key=lambda item: item[2] * item[3])
-
-    return None
-
 def camshift_track(prev, box, termination):
     hsv = cv2.cvtColor(prev,cv2.COLOR_BGR2HSV)
     x,y,w,h = box
@@ -86,7 +77,7 @@ def camshift_face_track():
         if not grabbed:
             raise EnvironmentError("Camera read failed!")
         image_prev = cv2.pyrDown(frame)
-        face_box = detect_face(image_prev)
+        face_box = utils.detect_face(face_cascade, image_prev)
 
     print "Face found!"
     prev_frames = image_prev.astype(np.float32)
@@ -103,7 +94,7 @@ def camshift_face_track():
             #               (0, 0,255), 2)
 
         else:
-            face_box = detect_face(image_curr)
+            face_box = utils.detect_face(face_cascade, image_curr)
 
         cv2.imshow("Output", image_curr)
         key = cv2.waitKey(1)
