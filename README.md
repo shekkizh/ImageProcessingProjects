@@ -39,3 +39,7 @@ Few example results:
 Works decently good when there is some occlusion as well
 
 <img src="https://cdn-images-1.medium.com/max/800/1*lWxJOEOSEWmTcRyky0Vc0w.jpeg" width = "400" height = "300"/> <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/Unwarping%20presentations/unwarped_presentation3.jpg"/>
+
+-  Localization is such an intuitive and simple concept governed by Bayes that I decided to try this code out. Here I calibrate face location initially and perform inference after.
+
+<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/FaceLocalization/calibration_screen.png" width = "376" height = "247"/> <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/FaceLocalization/localization_screen.png" width="376" height="247"/>  
