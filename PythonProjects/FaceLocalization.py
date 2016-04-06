@@ -66,14 +66,14 @@ while True:
     if not calibrate:
         utils.add_text(frame, "Press: W - closest,S - farthest,C - neutral, Q - Done")
         cv2.imshow("Calibrating...", frame)
-        key = cv2.waitKey(1)
-        if key & 0xFF == ord('w'):
+        key = cv2.waitKey(1) & 0xFF
+        if key == ord('w'):
             calibration_rects[-2] = (face_box[2], face_box[3])
-        elif key & 0xFF == ord('c'):
+        elif key == ord('c'):
             calibration_rects[0] = (face_box[2], face_box[3])
-        elif key & 0xFF == ord('s'):
+        elif key == ord('s'):
             calibration_rects[2] = (face_box[2], face_box[3])
-        elif key & 0xFF == ord('q'):
+        elif key == ord('q'):
             if len(calibration_rects.keys()) == 3:
                 calibrate = True
                 calibration_rects[-1] = tuple(sum(x)/len(x) for x in zip(calibration_rects[-2], calibration_rects[0]))
