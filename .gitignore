@@ -2,3 +2,6 @@
 .DS_Store
 **/.DS_Store
 */HandTracking.py
+results/stereo.ply
+results/stereo1.ply
+results/stereo2.ply
