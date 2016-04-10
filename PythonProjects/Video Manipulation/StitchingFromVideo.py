@@ -5,7 +5,7 @@ import numpy as np
 import cv2
 import os,sys,inspect
 
-cmd_subFolder = os.path.abspath(os.path.realpath(os.path.join(os.path.split(inspect.getfile(inspect.currentframe()))[0], "..","Image_Lib")))
+cmd_subFolder = os.path.abspath(os.path.realpath(os.path.join(os.path.split(inspect.getfile(inspect.currentframe()))[0], "..","..","Image_Lib")))
 if cmd_subFolder not in sys.path:
     sys.path.insert(0, cmd_subFolder)
 
