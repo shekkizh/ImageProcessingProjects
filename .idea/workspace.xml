@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b980218-49b8-4a5f-88d4-fbb67e580ba6" name="Default" comment="c" />
+    <list default="true" id="7b980218-49b8-4a5f-88d4-fbb67e580ba6" name="Default" comment="c">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonProjects/Stereo/CameraCalibration.py" afterPath="$PROJECT_DIR$/PythonProjects/Stereo/CameraCalibration.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="ImageProcessingProjects.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +27,8 @@
       <file leaf-file-name="CameraCalibration.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PythonProjects/Stereo/CameraCalibration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9068323">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="2" selection-end-line="62" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.25465837">
+              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
@@ -414,9 +417,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="695" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41956884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41956884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -814,8 +817,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonProjects/Stereo/CameraCalibration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9068323">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="2" selection-end-line="62" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.25465837">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
           </folding>
