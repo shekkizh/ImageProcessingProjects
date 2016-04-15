@@ -91,11 +91,12 @@ def sort_contours(cnts, method="left_to_right"):
 
     bounding_boxes = [cv2.boundingRect(c) for c in cnts]
     cnts, bounding_boxes = zip(*sorted(zip(cnts, bounding_boxes), key=lambda b: b[1][axis], reverse=reverse))
-    return (cnts, bounding_boxes)
+    return cnts, bounding_boxes
 
 
 def get_midpoint(ptA, ptB):
-    return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
+    return (ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5
+
 
 def detect_face(face_cascade, image):
     gray_image = cv2.equalizeHist(cv2.cvtColor(image, cv2.COLOR_BGR2GRAY))
