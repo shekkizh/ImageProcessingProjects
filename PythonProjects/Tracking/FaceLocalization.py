@@ -90,7 +90,7 @@ while True:
 
                 for i in range(1,no_points_either_side):
                     calibration_rects[no_points_either_side - i] = tuple(sum(x) for x in zip(calibration_rects[no_points_either_side], tuple([i*val for val in front_diff])))
-                    calibration_rects[no_points_either_side + i ] = tuple(sum(x) for x in zip(calibration_rects[z_axis_length - 1], tuple([i*val for val in back_diff])))
+                    calibration_rects[z_axis_length - 1 - i ] = tuple(sum(x) for x in zip(calibration_rects[z_axis_length - 1], tuple([i*val for val in back_diff])))
 
                 print calibration_rects
                 cv2.destroyWindow("Calibrating...")
@@ -104,7 +104,7 @@ while True:
         # print loc_probability
         utils.add_text(frame, ("Location %d, prob %g" % (location, loc_probability[location])))
         cv2.imshow("Output Estimation", frame)
-        if cv2.waitKey() & 0xFF == ord('f'):
+        if cv2.waitKey(2) & 0xFF == ord('f'):
             break
 
 camera.release()
