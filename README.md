@@ -43,3 +43,7 @@ Works decently good when there is some occlusion as well
 -  Localization based on Bayesian inference. Here I samplea few locations by calibrating face location initially and perform inference after.
 
 <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/FaceLocalization/calibration_screen.png" width = "376" height = "247"/> <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/FaceLocalization/localization_screen.png" width="376" height="247"/>  
+
+ - Can we provide anonymity for users in a video chat? A problem one of my friends suggested with a complicated yet awesome solution. This one here is just a simple fix I did.
+ 
+<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/FaceBlurring_result.png" width = "575" height = "378"/>
