@@ -15,21 +15,28 @@ import EyeTrackingLib as tracker
 
 ap = argparse.ArgumentParser("Finds pupil location in eyes")
 ap.add_argument("-i", "--image", required=True, help="Path to image file")
+ap.add_argument("-m", "--mode", required=False, help="Process after detecting face Y/N. Default = Y")
 args = vars(ap.parse_args())
 
 face_cascade = cv2.CascadeClassifier('Image_Lib/Face_Data/haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier('Image_Lib/Face_Data/haarcascade_eye.xml')
+if not args.get("mode", None):
+    detect_face = True
+else:
+    detect_face = False
 
 image = cv2.imread(args["image"])
 print image.shape
 
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+tracker.showImage = True
 
 face_box = None
 faces = face_cascade.detectMultiScale(gray, 1.1, 3)
 if len(faces) > 0:
     face_box = max(faces, key=lambda item: item[2] * item[3])
 
-if face_box is not None:
+if detect_face and face_box is not None:
     x, y, w, h = face_box
     cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 255), 3)
     roi_x = int(x + w * 0.14)
@@ -38,28 +45,42 @@ if face_box is not None:
     roi_h = int(h * 0.3)
 
     cv2.rectangle(image, (roi_x, roi_y), (roi_x + roi_w, roi_y + roi_h), (255, 0, 0), 2)
-    row, col = tracker.find_eye_center(gray[roi_y:roi_y+roi_h, roi_x:roi_x+roi_w])
+    row, col = tracker.find_eye_center(gray[roi_y:roi_y + roi_h, roi_x:roi_x + roi_w])
     print row, col
 
     cv2.circle(image, (roi_x + col, roi_y + row), 10, (0, 255, 0), -1)
 
     roi_x = x + w - roi_w - int(w * 0.13)
     cv2.rectangle(image, (roi_x, roi_y), (roi_x + roi_w, roi_y + roi_h), (255, 255, 0), 2)
-    row, col = tracker.find_eye_center(gray[roi_y:roi_y+roi_h, roi_x:roi_x+roi_w])
+    row, col = tracker.find_eye_center(gray[roi_y:roi_y + roi_h, roi_x:roi_x + roi_w])
     print row, col
 
-    cv2.circle(image, (roi_x + col, roi_y + row), 10, (0, 0, 255), -1)
+    cv2.circle(image, (roi_x + col, roi_y + row), 10, (0, 255, 0), -1)
 
 else:
-    row, col = tracker.find_eye_center(gray[:, 0:image.shape[1] / 2])
-    print row, col
+    eyes = eye_cascade.detectMultiScale(gray, 1.2, 3)
+    if len(eyes) == 2:
+        x, y, w, h = eyes[0]
+        row, col = tracker.find_eye_center(gray[y:y + h, x:x + w])
+        print row, col
+        cv2.circle(image, (x + col, y + row), 10, (255, 0, 0), -1)
 
-    cv2.circle(image, (col, row), 10, (255, 255, 0), -1)
+        x, y, w, h = eyes[1]
+        row, col = tracker.find_eye_center(gray[y:y + h, x:x + w])
+        print row, col
 
-    row, col = tracker.find_eye_center(gray[:, image.shape[1] / 2:])
-    print row, col
+        cv2.circle(image, (x + col, y + row), 10, (255, 0, 0), -1)
 
-    cv2.circle(image, (image.shape[1] / 2 + col, row), 10, (255, 0, 0), -1)
+    else:
+        row, col = tracker.find_eye_center(gray[:, 0:image.shape[1] / 2])
+        print row, col
+
+        cv2.circle(image, (col, row), 10, (0, 0, 255), -1)
+
+        row, col = tracker.find_eye_center(gray[:, image.shape[1] / 2:])
+        print row, col
+
+        cv2.circle(image, (image.shape[1] / 2 + col, row), 10, (0, 0, 255), -1)
 
 cv2.imshow("Output", utils.image_resize(image, height=600))
 cv2.waitKey()

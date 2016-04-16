@@ -23,7 +23,7 @@ else:
     camera = cv2.VideoCapture(args["video"])
 
 face_cascade = cv2.CascadeClassifier('Image_Lib/Face_Data/haarcascade_frontalface_default.xml')
-
+tracker.showImage = False
 while True:
     grabbed, frame = camera.read()
     if not grabbed:
@@ -31,7 +31,7 @@ while True:
         break
 
     frame = utils.image_resize(frame, height=600)
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    gray = cv2.equalizeHist(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY))
     face_box = None
     faces = face_cascade.detectMultiScale(gray, 1.1, 3)
     if len(faces) > 0:
