@@ -19,25 +19,29 @@ def find_eye_center(image):
     :param image: Gray scale image of eye
     :return: row, col identified as center
     """
-    print image.shape
+    # print image.shape
 
     scaled_image = utils.image_resize(image.copy(), width=EYE_ROI_WIDTH)
     gradient_energy_x = cv2.Scharr(scaled_image, cv2.CV_64F, 1, 0)  # , ksize=3)
     gradient_energy_y = cv2.Scharr(scaled_image, cv2.CV_64F, 0, 1)  # , ksize=3)
     gradient_magnitude = (gradient_energy_x ** 2 + gradient_energy_y ** 2) ** 0.5
-    threshold = np.mean(gradient_magnitude) + np.std(gradient_magnitude) * 2
+    threshold = np.mean(gradient_magnitude) + np.std(gradient_magnitude) * 3
     gradient_energy_x /= gradient_magnitude
     gradient_energy_y /= gradient_magnitude
     mask = gradient_magnitude < threshold
     gradient_energy_x[mask] = 0
     gradient_energy_y[mask] = 0
     scaled_image = cv2.GaussianBlur(scaled_image, (5, 5), 0, 0)
-    # we plan to use the grey scale values as weights => black pupil needs to be white and so on
+
     inverted_image = 255 * np.ones_like(scaled_image) - scaled_image
-    output_sum = np.zeros_like(inverted_image)
+
+    indices = np.indices(inverted_image.shape).astype(np.float32)
+    indices += 1e-8
+    output_sum = np.zeros_like(inverted_image).astype(np.float32)
     for row in range(output_sum.shape[0]):
         for col in range(output_sum.shape[1]):
-            output_sum += compute_location_weight(row, col, inverted_image, gradient_energy_x, gradient_energy_y)
+            val = (indices[0] - row)*gradient_energy_y + (indices[1] - col)*gradient_energy_y
+            output_sum +=  inverted_image * (val - val.mean())/val.std() #compute_location_weight(row, col, inverted_image, gradient_energy_x, gradient_energy_y)
 
     index = np.unravel_index(np.argmax(output_sum), output_sum.shape)
     rescaled_index = (
