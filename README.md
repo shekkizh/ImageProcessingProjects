@@ -47,3 +47,7 @@ Works decently good when there is some occlusion as well
  - Can we provide anonymity for users in a video chat? A problem one of my friends suggested with a complicated yet awesome solution. This one here is just a simple fix I did.
  
 <img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/FaceBlurring_result.png" width = "575" height = "378"/>
+
+- Eye tracking as always been a topic I have found myself going back again and again to solve. This one here works real time and is based on the idea from Fabian Timm's paper. 
+
+<img src="https://github.com/shekkizh/ImageProcessingProjects/blob/master/results/eye_tracker_result.png" width = "575" height = "378"/>
