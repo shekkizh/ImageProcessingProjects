@@ -75,6 +75,7 @@ def get_contours(gray_image, param=None):
     blurred = cv2.GaussianBlur(gray_image, (5, 5), 0)
     if not param:
         edged = auto_canny(gray_image)
+        # t, edged = cv2.threshold(gray_image, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
     else:
         edged = cv2.Canny(blurred, param / 2, param)
     _, cnts, _ = cv2.findContours(edged, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
