@@ -39,10 +39,10 @@ track_interval = 0
 tracks = []
 prev_gray_frame = None
 
+print ("Reading camera...")
 while True:
     grabbed, frame = camera.read()
     if not grabbed:
-        cv2.waitKey()
         raise EnvironmentError("Camera read failed!")
     frame = utils.image_resize(frame, height=600)
     output = frame.copy()
@@ -69,7 +69,7 @@ while True:
         utils.add_text(output, ("tracking %d" % len(tracks)))
         track_interval += 1
 
-    if track_interval % 10 == 0:
+    if track_interval % 100 == 0:
         mask = 255 * np.ones(curr_gray_frame.shape)
         for x,y in [np.int32(tr[-1]) for tr in tracks]:
             cv2.circle(mask, (x,y), 5, 0, -1)

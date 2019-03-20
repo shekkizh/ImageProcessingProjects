@@ -5,13 +5,15 @@ import numpy as np
 
 def image_resize(image, width=-1, height=-1):
     shape = image.shape
-    if (width == -1):
-        if (height == -1):
+    if width == -1:
+        if height == -1:
             return image
         else:
             return cv2.resize(image, (int(height * shape[1] / shape[0]), height))
-    elif (height == -1):
+    elif height == -1:
         return cv2.resize(image, (width, int(width * shape[0] / shape[1])))
+    else:
+        cv2.resize(image, (width, height))
 
 
 # Image has to eb gray scaled and gaussian blurred before calling this function
